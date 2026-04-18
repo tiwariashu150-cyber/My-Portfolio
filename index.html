@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashutosh Tiwari — Developer & Builder</title>
+  <meta name="description" content="First-year CS student who ships real projects. Building with Python, React, Node.js — and creating content about my journey and life for 540+ subscribers.">
+  <meta name="keywords" content="Ashutosh Tiwari, developer, portfolio, Python, React, Node.js, computer science">
+  <meta name="author" content="Ashutosh Tiwari">
+  <meta property="og:title" content="Ashutosh Tiwari — Developer & Builder">
+  <meta property="og:description" content="First-year CS student who ships real projects. Building with Python, React, Node.js.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <a href="#" class="nav-logo">
+        <span class="dot"></span>
+        Ashutosh
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#youtube">Content</a>
+        <a href="#contact" class="nav-cta">Let's Talk</a>
+      </div>
+      <button class="nav-mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-nav-overlay" id="mobileNav">
+    <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close navigation menu">&times;</button>
+    <a href="#projects" class="mobile-nav-link">Projects</a>
+    <a href="#skills" class="mobile-nav-link">Skills</a>
+    <a href="#about" class="mobile-nav-link">About</a>
+    <a href="#youtube" class="mobile-nav-link">Content</a>
+    <a href="#contact" class="mobile-nav-link">Contact</a>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero section" id="hero">
+    <div class="hero-bg-glow hero-bg-glow-1"></div>
+    <div class="hero-bg-glow hero-bg-glow-2"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-status">
+          <span class="pulse"></span>
+          Open to internships & collaborations
+        </div>
+        <h1>
+          I build things that work,<br>
+          <span class="gradient-text">not just assignments.</span>
+        </h1>
+        <p class="hero-subtitle">
+          First-year CS student shipping real projects with Python, React, and Node.js — while creating content about my journey and the fun I'm having along the way for 540+ people on YouTube.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v12"/><path d="M18 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M6 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M18 9a9 9 0 0 1-9 9"/></svg>
+            View My Work
+          </a>
+          <a href="#contact" class="btn-secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Get in Touch
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-number" data-count="1">0</div>
+            <div class="hero-stat-label">Shipped Project</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number" data-count="540">0</div>
+            <div class="hero-stat-label">YouTube Subscribers</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number" data-count="6">0</div>
+            <div class="hero-stat-label">Technologies</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">Featured Work</span>
+        <h2 class="section-title">Projects I've actually built.</h2>
+        <p class="section-subtitle">
+          Not tutorials I followed. Not templates I forked. Code I wrote, problems I solved, things I shipped.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: AI Spam Detection -->
+        <div class="project-card reveal">
+          <div class="project-header">
+            <div class="project-icon">🛡️</div>
+            <span class="project-tag">Solo Build</span>
+          </div>
+          <h3>AI-Based Spam Detection System</h3>
+          <p class="project-description">
+            A machine learning system that classifies messages as spam or legitimate using natural language processing. Built end-to-end — from data preprocessing to model training to deployment-ready output.
+          </p>
+
+          <div class="project-details">
+            <div class="project-detail-item">
+              <h4>Problem</h4>
+              <p>Email and SMS spam wastes time and poses security risks. Existing filters miss context-dependent spam, and most beginner projects stop at basic keyword matching.</p>
+            </div>
+            <div class="project-detail-item">
+              <h4>Solution</h4>
+              <p>Built a classifier using NLP techniques — tokenization, TF-IDF vectorization, and trained ML models (Naive Bayes, SVM) to detect spam with high accuracy on real datasets.</p>
+            </div>
+          </div>
+
+          <div class="project-tech-stack">
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">scikit-learn</span>
+            <span class="tech-badge">NLTK</span>
+            <span class="tech-badge">Pandas</span>
+            <span class="tech-badge">NumPy</span>
+            <span class="tech-badge">TF-IDF</span>
+          </div>
+
+          <div class="project-learnings">
+            <h4>What I Learned</h4>
+            <ul>
+              <li>How text preprocessing (stemming, stopword removal) directly impacts model accuracy</li>
+              <li>Choosing the right vectorization method matters more than the model itself</li>
+              <li>Working with real-world messy data vs clean tutorial datasets</li>
+              <li>End-to-end ML pipeline: data → features → model → evaluation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- More Projects CTA -->
+      <div class="reveal" style="text-align: center; margin-top: 48px;">
+        <p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 16px;">More projects shipping soon. Building in public.</p>
+        <a href="https://www.youtube.com/@tiwariashu150" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="display: inline-flex;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          Follow my journey on YouTube
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">Capabilities</span>
+        <h2 class="section-title">What I can actually do.</h2>
+        <p class="section-subtitle">
+          Honest skill assessment. No listing things I watched one tutorial on.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Languages -->
+        <div class="skill-category reveal">
+          <div class="skill-category-icon lang">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6c63ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Languages</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <span class="skill-item-name">Python</span>
+              <span class="skill-item-level">Comfortable</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-item-name">JavaScript</span>
+              <span class="skill-item-level">Working</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-item-name">C++</span>
+              <span class="skill-item-level">Learning</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frameworks -->
+        <div class="skill-category reveal">
+          <div class="skill-category-icon framework">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          </div>
+          <h3>Frameworks & Libraries</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <span class="skill-item-name">React</span>
+              <span class="skill-item-level">Working</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-item-name">Node.js</span>
+              <span class="skill-item-level">Working</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-item-name">Flask</span>
+              <span class="skill-item-level">Working</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-item-name">scikit-learn</span>
+              <span class="skill-item-level">Exploring</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools & Other -->
+        <div class="skill-category reveal">
+          <div class="skill-category-icon tools">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h3>Tools & Other</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <span class="skill-item-name">Git & GitHub</span>
+              <span class="skill-item-level">Daily use</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-item-name">Video Editing</span>
+              <span class="skill-item-level">Proficient</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-item-name">VS Code</span>
+              <span class="skill-item-level">Daily use</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-item-name">Antigravity</span>
+              <span class="skill-item-level">Working</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-item-name">Claude</span>
+              <span class="skill-item-level">Working</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">Background</span>
+        <h2 class="section-title">The short version.</h2>
+      </div>
+
+      <div class="about-layout">
+        <div class="about-text reveal">
+          <p>
+            I'm Ashutosh — a first-year Computer Science Engineering student in India who'd rather build things than wait for the syllabus to catch up.
+          </p>
+          <p>
+            While most freshers are still figuring out which IDE to use, I've already shipped an ML project from scratch, started freelancing, and built a YouTube channel where I document what I'm learning — for 540+ people who apparently find it useful.
+          </p>
+          <p>
+            I'm not pretending to be a senior dev. I'm a beginner who actually builds, breaks things, learns from real code, and shows up consistently. That's the whole pitch.
+          </p>
+          <p>
+            Right now, I'm focused on growing my skills in full-stack development and machine learning. I'm actively looking for internships where I can work on real problems, write real code, and learn from people better than me.
+          </p>
+        </div>
+
+        <div class="about-highlights reveal">
+          <div class="about-highlight-card">
+            <div class="icon">🎯</div>
+            <h4>Builder, Not a Collector</h4>
+            <p>I don't hoard certificates. I build projects. Every skill on this site is something I've used in actual code.</p>
+          </div>
+          <div class="about-highlight-card">
+            <div class="icon">📹</div>
+            <h4>Creates Content About the Journey</h4>
+            <p>540+ subscribers following along as I share my coding journey, life moments, and the fun I'm having figuring it all out.</p>
+          </div>
+          <div class="about-highlight-card">
+            <div class="icon">⚡</div>
+            <h4>First Year, Real Output</h4>
+            <p>Most students wait until third year to start. I started building from day one. The gap only grows from here.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== YOUTUBE ===== -->
+  <section class="section" id="youtube">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">Content</span>
+        <h2 class="section-title">My journey. My content. My life.</h2>
+        <p class="section-subtitle">
+          My YouTube channel is where I share my journey as a CS student — the coding, the chaos, and the fun I'm having along the way. Real life, no script.
+        </p>
+      </div>
+
+      <div class="youtube-layout reveal">
+        <div class="youtube-info">
+          <h3>Why I create content</h3>
+          <p>
+            I document my journey because life's too short to keep it all to yourself. From late-night coding sessions to random fun moments — I put it all out there. It keeps me consistent, and 540+ people seem to enjoy the ride.
+          </p>
+
+          <div class="youtube-stats">
+            <div class="yt-stat">
+              <div class="yt-stat-number">540+</div>
+              <div class="yt-stat-label">Subscribers</div>
+            </div>
+            <div class="yt-stat">
+              <div class="yt-stat-number">1,000</div>
+              <div class="yt-stat-label">Avg. Views / Video</div>
+            </div>
+          </div>
+
+          <a href="https://www.youtube.com/@tiwariashu150" target="_blank" rel="noopener noreferrer" class="youtube-channel-link">
+            Visit my channel
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+
+        <div class="youtube-embed-container">
+          <iframe 
+            src="https://www.youtube.com/embed?listType=user_uploads&list=tiwariashu150" 
+            title="Ashutosh Tiwari YouTube Channel"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">Get in Touch</span>
+        <h2 class="section-title">Let's work together.</h2>
+        <p class="section-subtitle">
+          Looking for internship opportunities, freelance projects, or interesting collaborations. If you have something real to work on, I'd like to hear about it.
+        </p>
+      </div>
+
+      <div class="contact-card reveal">
+        <div class="contact-email" id="copyEmail" title="Click to copy email">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          officialashuishere@gmail.com
+          <span class="copy-text">(click to copy)</span>
+        </div>
+
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/ashutosh-tiwari1292006" target="_blank" rel="noopener noreferrer" class="contact-link" id="linkedinLink">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://www.youtube.com/@tiwariashu150" target="_blank" rel="noopener noreferrer" class="contact-link" id="youtubeLink">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+            YouTube
+          </a>
+          <a href="https://instagram.com/tiwariashu150" target="_blank" rel="noopener noreferrer" class="contact-link" id="instagramLink">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            Instagram
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>Built by Ashutosh Tiwari · <span class="year">2026</span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
